@@ -37,7 +37,14 @@
 
 #identificate{
     margin-top: 15px;
+
 }
+
+.footer {
+    color: #ffffff;
+    font-size: small;
+}
+
 
 #menu-principal{
     margin-top: 20px;
@@ -71,7 +78,7 @@
 
 .rslides img {
     display: block;
-    height: 350px!important;
+    height: 330px!important;
     float: left;
     width: 100%;
     border: 0;
@@ -84,6 +91,15 @@
 
 #side-menu .card-panel{
     height: 350px;
+    background-color: #ffffff;
+    color: #A00D17;
+    text-align: center!important;
+    font-size: 1.3em!important;
+}
+
+.location {
+    text-align: right;
+    font-size: x-small;
 }
 
 #side-menu .collection{

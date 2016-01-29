@@ -57,6 +57,27 @@
     text-transform: uppercase;
 }
 
+#contenido{
+  display: block;
+  font-size: 1rem;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 15px;
+}
+
+.contenido-alumnos{
+    margin-left: 40px;
+    color: #A00D17;
+    font-size: 20px;
+}
+
+#p1{
+    font-size: 14px;
+    color: black;
+    padding-bottom: 8px;
+    margin-left: 15px;
+}
+
 .rslides {
     position: relative;
     list-style: none;

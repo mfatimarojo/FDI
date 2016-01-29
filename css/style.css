@@ -1,4 +1,5 @@
-.navbar-fixed nav{
+.navbar-ucm nav{
+    position: fixed;
     background: rgba(18,37,98, 0.6) url('../images/cabecera-1.png') top left no-repeat;
     height: 84px;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
@@ -10,7 +11,7 @@
     background: rgba(18,37,98, 0.6) url('https://www.ucm.es/themes/ucm3/media/img/cabecera-1.png') top left no-repeat;
 }
 
-.navbar-fixed .nav-wrapper .logo a{
+.navbar-ucm .nav-wrapper .logo a{
     position: relative;
     left: 20px;
     top: 5px;
@@ -19,22 +20,22 @@
     z-index: 20;
 }
 
-.navbar-fixed .nav-wrapper h4{
+.navbar-ucm .nav-wrapper h4{
     font-size: 1em;
 }
 
-.navbar-fixed nav form input{
+.navbar-ucm nav form input{
     display: inline;
 }
 
-.navbar-fixed nav form a{
+.navbar-ucm nav form a{
     background-color: transparent!important;
     text-align: left!important;
     box-shadow: none!important;
     padding: 0px!important;
 }
 
-.navbar-fixed nav i{
+.navbar-ucm nav i{
     font-size: 1.5em!important;
     margin-top: -15px!important;
 }
@@ -57,13 +58,17 @@
     text-transform: uppercase;
 }
 
+#menu-principal-opciones, .button-collapse {
+    /*margin-top: -25px;*/
+}
+
 #contenido{
   display: block;
   font-size: 1rem;
   height: 64px;
   line-height: 64px;
   padding: 0 15px;
-}
+}   
 
 .contenido-alumnos{
     margin-left: 40px;
@@ -133,5 +138,25 @@
 }
 
 main{
-    margin-bottom: 0!important;
+    padding-bottom: 80px;
+}
+
+footer.row{
+    margin: 0;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
+.dropdown-content{
+    margin-top: 65px;
+}
+
+.card, card-small{
+    height: auto!important;
 }

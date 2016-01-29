@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <header class="navbar-fixed">
+        <header class="navbar-ucm" id="header">
             <nav class="row">
                 <div class="nav-wrapper row">
                     <div class="logo col s8">
@@ -25,9 +25,9 @@
                     </div>
                     <div class="col s4">
                         <div class="row">
-                            <form class="col m8">
+                            <form class="col m8 hide-on-small-only">
                                 <div class="row">
-                                    <div class="col s9">
+                                    <div class="col m9">
                                         <input placeholder="Buscar en la web" id="first_name" type="text">
                                     </div>
                                     <div class="input-field col s3 left-align">
@@ -37,65 +37,145 @@
                                     </div>
                                 </div>
                             </form>
-                            <a class="waves-effect waves-light btn col s4" id="identificate">Identifícate</a>
+                            <a class="waves-effect waves-light btn col m4 right" id="identificate"><i class="fa fa-user"></i></a>
                         </div>
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>   
+        <div id="fixed">
+            <nav id="menu-principal">
+                <ul id="slide-out" class="side-nav">
+                    <!-- Opciones movil -->
+                    <!-- facultad -->
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Facultad<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">Gobierno</a></li>
+                                        <li><a href="#!">Infraestructuras</a></li>
+                                        <li><a href="#!">Secretaría</a></li>
+                                        <li><a href="#!">Departamentos</a></li>
+                                        <li><a href="#!">Localización</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
 
-        <!--menu-->
-        <ul id="facultad" class="dropdown-content">
-            <li><a href="#!">Gobierno</a></li>
-            <li><a href="#!">Infraestructuras</a></li>
-            <li><a href="#!">Secretaría</a></li>
-            <li><a href="#!">Departamentos</a></li>
-            <li><a href="#!">Localización</a></li>    
-        </ul>
-        
-        <ul id="alumnos" class="dropdown-content">
-            <li><a href="#!">Calendario académico</a></li>
-            <li><a href="#!">Horarios</a></li>
-            <li><a href="#!">Exámenes</a></li>
-            <li><a href="#!">Profesores y asignaturas</a></li>
-            <li><a href="#!">Movilidad</a></li>
-            <li><a href="#!">Prácticas y empleo</a></li>
-        </ul>
-        
-        <ul id="estudios" class="dropdown-content">
-            <li><a href="#!">Grado</a></li>
-            <li><a href="#!">Máster</a></li>
-            <li><a href="#!">Doctorado</a></li>
-            <li><a href="#!">Licenciaturas e Ingenierías</a></li>
-            <li><a href="#!">Títulos propios</a></li>
-        </ul>
-        
-        <ul id="actividades" class="dropdown-content">
-            <li><a href="#!">Asociaciones</a></li>
-            <li><a href="#!">Conferencias</a></li>
-            <li><a href="#!">Talleres</a></li>
-            <li><a href="#!">Concursos</a></li>
-            <li><a href="#!">Deportes</a></li>
-        </ul>      
-               
-          <nav id="menu-principal">
-            <div class="nav-wrapper">
-                 <ul id="nav-mobile" class="left hide-on-med-and-up">
-                <li><a href="facultad.html">facultad</a></li>
-                <li><a href="alumnos.html">alumnos</a></li>
-                <li><a href="estudios-ofertados.html">estudios ofertados</a></li>
-                <li><a href="investigacion.html">investigación</a></li>
-                <li><a href="actividades.html">actividades</a></li>
-            </ul>
-              <ul> 
-                <li><a class="dropdown-button" href="facultad.html" data-activates="facultad">facultad</a></li>
-                <li><a class="dropdown-button" href="alumnos.html" data-activates="alumnos">alumnos</a></li>
-                <li><a class="dropdown-button" href="estudios-ofertados.html" data-activates="estudios">estudios ofertados</a></li>
-                <li><a class="dropdown-button" href="investigacion.html">investigación</a></li>
-                <li><a class="dropdown-button" href="actividades.html" data-activates="actividades">actividades</a></li>
-              </ul> 
+                    </li>
+                    <!-- fin facultad -->
+                    <!-- alumnos -->
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Alumnos<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">Calendario académico</a></li>
+                                        <li><a href="#!">Horarios</a></li>
+                                        <li><a href="#!">Exámenes</a></li>
+                                        <li><a href="#!">Profesores y asignaturas</a></li>
+                                        <li><a href="#!">Movilidad</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- fin alumnos -->
+                    <!-- estudios ofertados -->
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Est ofertados<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">Grado</a></li>
+                                        <li><a href="#!">Máster</a></li>
+                                        <li><a href="#!">Doctorado</a></li>
+                                        <li><a href="#!">Licenciaturas e ingenierías</a></li>
+                                        <li><a href="#!">Títulos propios</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- fin alumnos -->
+                    <!-- Investigación -->
+                    <li><a href="#!">Investigación</a></li>
+                    <!-- fin Investigación -->
+                    <!-- estudios ofertados -->
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Actividades<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">Asociaciones</a></li>
+                                        <li><a href="#!">Conferencias</a></li>
+                                        <li><a href="#!">Talleres</a></li>
+                                        <li><a href="#!">Concursos</a></li>
+                                        <li><a href="#!">Deportes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- fin alumnos -->
+                    <!--fin opciones movil -->
+                </ul>
+                <ul class="left hide-on-med-and-down" id="menu-principal-opciones">
+                    <!-- opciones -->
+                    <!-- Facultad -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Facultad<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Gobierno</a></li>
+                        <li><a href="#!">Infraestructuras</a></li>
+                        <li><a href="#!">Secretaría</a></li>
+                        <li><a href="#!">Departamentos</a></li>
+                        <li><a href="#!">Localización</a></li>
+                    </ul>
+                    <!-- fin facultad -->
+                    <!-- Alumnos -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Alumnos<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <ul id='dropdown2' class='dropdown-content'>
+                        <li><a href="#!">Calendario académico</a></li>
+                        <li><a href="#!">Horarios</a></li>
+                        <li><a href="#!">Exámenes</a></li>
+                        <li><a href="#!">Profesores y asignaturas</a></li>
+                        <li><a href="#!">Movilidad</a></li>
+                    </ul>
+                    <!-- fin alumnos -->
+                    <!-- estudios ofertados -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Estudios ofertados<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <ul id='dropdown3' class='dropdown-content'>
+                        <li><a href="#!">Grado</a></li>
+                        <li><a href="#!">Máster</a></li>
+                        <li><a href="#!">Doctorado</a></li>
+                        <li><a href="#!">Licenciaturas e ingenierías</a></li>
+                        <li><a href="#!">Títulos propios</a></li>
+                    </ul>
+                    <!-- fin estudios ofertados -->
+                    <!-- Investigación -->
+                    <li><a href="#!">Investigación</a></li>
+                    <!-- fin Investigación -->
+                    <!-- estudios ofertados -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Actividades<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <ul id='dropdown4' class='dropdown-content'>
+                        <li><a href="#!">Asociaciones</a></li>
+                        <li><a href="#!">Conferencias</a></li>
+                        <li><a href="#!">Talleres</a></li>
+                        <li><a href="#!">Concursos</a></li>
+                        <li><a href="#!">Deportes</a></li>
+                    </ul>
+                    <!-- fin estudios ofertados -->
+                    <!-- fin opciones movil -->
+
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </nav>
         </div>
-          </nav>
         <!--fin menu-->
 
         <main class="row"> 
@@ -106,53 +186,53 @@
                     <li><img class="responsive-img" src="images/Die-potato.png" ></li>
                 </ul>
             </div>
-          
-        <div class="col m4">
-          <div class="card card small">
-            <div class="card-image">
-              <img src="images/logoCV.png">
-            </div>
-            <div class="card-content black-text">
-              Herramienta de apoyo en línea a la actividad formativa.
-            </div>
-               <div class="card-action">
-              <a href="#" class="amber-text">Campus Virtual</a>
-            </div>
-          </div>
-        </div>
-            
-        <div class="col m2">
-            <div class="card card xs">
-              <div class="card-content black-text">
-                Gestión académica.
-              </div>
-              <div class="card-action">
-                <a href="#" class="amber-text">GEA UCMnet</a>
-              </div>
-            </div>
-        </div>
-        
-            <div class="col m2">
-            <div class="card card xs">
-              <div class="card-content black-text">
-                Gestión de préstamos.
-              </div>
-              <div class="card-action">
-                <a href="#" class="amber-text">Biblioteca</a>
-              </div>
-            </div>
-        </div>
 
+            <div class="col m4">
+                <div class="card card small">
+                    <div class="card-image">
+                        <img src="images/logoCV.png">
+                    </div>
+                    <div class="card-content black-text">
+                        Herramienta de apoyo en línea a la actividad formativa.
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="amber-text">Campus Virtual</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m6">
+                        <div class="card card xs">
+                            <div class="card-content black-text">
+                                Gestión académica.
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="amber-text">GEA UCMnet</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col m6">
+                        <div class="card card xs">
+                            <div class="card-content black-text">
+                                Gestión de préstamos.
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="amber-text">Biblioteca</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-    
+
         <footer class="page-footer footer grey darken-4 row">
-          <!--<div class="container">-->
+            <!--<div class="container">-->
             <div class="row">
                 <div class="col m2">
                     Contacto
                     <br>
                     Aviso Legal
-                    </div>
+                </div>
                 <div class="col m2">
                     Delegación de Alumnos
                     <br>
@@ -167,32 +247,42 @@
                     <br>
                     Fax: 91 394 75 01
                 </div>
-              <div class="col m5 right-align">
-                Síguenos en:
-               <br>
-				 <a class="grey-text text-lighten-3" href="https://twitter.com/informaticaucm"><span><i class="medium fa fa-twitter-square"> </i></span></a>
-				 <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="medium fa fa-youtube-square"> </i></span></a>
-              </div>
+                <div class="col m5 right-align">
+                    Síguenos en:
+                    <br>
+                    <a class="grey-text text-lighten-3" href="https://twitter.com/informaticaucm"><span><i class="medium fa fa-twitter-square"> </i></span></a>
+                    <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="medium fa fa-youtube-square"> </i></span></a>
+                </div>
             </div>
-          <!--</div>-->
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <!--</div>-->
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
             </div>
-          </div>
         </footer>
 
 
         <!--fin menu-->
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/responsiveslides.min.js"></script>
         <script>
             $(function () {
                 $(".rslides").responsiveSlides();
                 $(".button-collapse").sideNav();
+
+                $(window).scroll(function () {
+                    var header = $("#header");
+                    var headerBottom = header.offset().top;
+                    if (headerBottom >= 0) {
+                        $("#fixed").addClass("fixed-nabvar");
+                    } else {
+                        $("#fixed").removeClass("fixed-nabvar");
+                    }
+                });
             });
         </script>
     </body>

@@ -53,7 +53,7 @@
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header">Facultad<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <a class="collapsible-header" href="#">Facultad<i class="mdi-navigation-arrow-drop-down"></i></a>
                                 <div class="collapsible-body">
                                     <ul>
                                         <li><a href="#!">Gobierno</a></li>
@@ -159,7 +159,7 @@
         </div>
 
         <main class="row"> 
-            <div class="col m12 l8" id="slide">
+            <div class="col s12 m8 l8" id="slide">
                 <ul class="rslides">
                     <li><img class="responsive-img" src="images/fdi.JPG" ></li>
                     <li><img class="responsive-img" src="images/museo.jpg"></li>
@@ -167,7 +167,7 @@
                 </ul>
             </div>
 
-            <div class="col s12 m12 l4" id="funcionalidades">
+            <div class="col s12 m4 l4" id="funcionalidades">
                 <div class="card card small">
                     <div class="card-image">
                         <img src="images/logoCV.png">
@@ -235,12 +235,12 @@
                 </div>
             </div>
             <!--</div>-->
-<!--            <div class="footer-copyright">
-                <div class="container">
-                    © 2014 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>-->
+            <!--            <div class="footer-copyright">
+                            <div class="container">
+                                © 2014 Copyright Text
+                                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                            </div>
+                        </div>-->
         </footer>
 
 
@@ -254,17 +254,19 @@
                 $(".rslides").responsiveSlides();
                 $(".button-collapse").sideNav();
 
-                $(window).on("scroll", function(){
-                    
-                    if($(this).scrollTop() >= 84){
-                        console.log($(this).scrollTop());
+                $(window).on("scroll", function () {
+
+                    if ($(this).scrollTop() >= 84) {
+                        
                         $("#menu-principal-div").css("position", "fixed");
                         $("#menu-principal-div").css("top", "0");
                         $("#menu-principal-div").css("z-index", "2000");
                         $("#menu-principal-div").css("width", "100%");
                         $("#logo-navbar").show();
                         $("#menu-principal-div").addClass("animated slideInDown");
-                    } else{
+                        $(".side-nav").css("position", "absolute");
+                        $(".side-nav").css("height", $(window).height()+"px");
+                    } else {
                         $("#menu-principal-div").css("position", "static");
                         $("#menu-principal-div").removeClass("animated slideInDown");
                         $("#logo-navbar").hide();

@@ -46,7 +46,6 @@
 
 .footer {
     color: #ffffff;
-    font-size: small;
     position: fixed;
 }
 
@@ -125,9 +124,16 @@ nav#menu-principal, nav#menu-principal .nav-wrapper i, nav#menu-principal a.butt
     font-size: 1.3em!important;
 }
 
-.location {
-    text-align: center;
+.location-address {
+    //text-align: right;
     font-size: x-small;
+    padding-top: 10px!important;
+}
+
+.location {
+    font-size: small;
+    padding-top: 10px!important;
+    padding-left: 20px!important;
 }
 
 #side-menu .collection{
@@ -163,6 +169,14 @@ footer.row{
 
 .dropdown-content{
     margin-top: 65px;
+}
+
+.dropdown-content-mov{
+    color: #A00D17;
+}
+
+.dropdown-content-mov-header{
+    font-weight: bold;
 }
 
 .card, card-small{
@@ -211,45 +225,13 @@ footer .row{
     color: #A00D17;
 }
 
-.breadcrumbs i,
-.breadcrumbs [class^="mdi-"], .breadcrumbs [class*="mdi-"],
-.breadcrumbs i.material-icons {
-  display: inline-block;
-  float: left;
-  font-size: 12px;
+.dropdown-content-mov li > a, .dropdown-content-mov li > span{
+    color: #A00D17;
 }
 
-.breadcrumbs:before {
-  content: '\E5CC';
-  color: #A00D17;
-  display: inline-block;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px;
-  margin: 0 5px 0 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.breadcrumbs:first-child:before {
-  display: none;
-  color: #A00D17;
-}
-
-.breadcrumbs:last-child {
-  color: #A00D17;
-  font-weight: bold;
-}
-
-a {
-  color: #A00D17;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a1 {
-  color: #A00D17;
-  text-decoration: none;
-  font-size: 6px;
-  -webkit-tap-highlight-color: transparent;
+.a-footer {
+  color: #fff!important;
+  font-weight: bold!important;
+  text-decoration: none!important;
+  -webkit-tap-highlight-color: transparent!important;
 }

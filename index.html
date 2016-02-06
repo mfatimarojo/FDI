@@ -49,11 +49,11 @@
 
         <div id="menu-principal-div">
             <nav id="menu-principal">
-                <ul id="slide-out" class="side-nav">
+                <ul id="slide-out" class="side-nav dropdown-content-mov">
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header" href="#">Facultad<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <a class="collapsible-header dropdown-content-mov-header" href="#">Facultad<i class="mdi-navigation-arrow-drop-down"></i></a>
                                 <div class="collapsible-body">
                                     <ul>
                                         <li><a href="#!">Gobierno</a></li>
@@ -67,43 +67,62 @@
                         </ul>
 
                     </li> 
+                    <li class="divider"></li>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header">Alumnos<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <a class="collapsible-header dropdown-content-mov-header">Alumnos<i class="mdi-navigation-arrow-drop-down"></i></a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href="#!">Calendario académico</a></li>
+                                        <li><a href="#!">Calendario</a></li>
                                         <li><a href="#!">Horarios</a></li>
                                         <li><a href="#!">Exámenes</a></li>
-                                        <li><a href="#!">Profesores y asignaturas</a></li>
+                                        <li><a href="#!">Prof y asig</a></li>
                                         <li><a href="#!">Movilidad</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
+                    <li class="divider"></li>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header">Est ofertados<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <a class="collapsible-header dropdown-content-mov-header">Est ofertados<i class="mdi-navigation-arrow-drop-down"></i></a>
                                 <div class="collapsible-body">
                                     <ul>
                                         <li><a href="#!">Grado</a></li>
                                         <li><a href="#!">Máster</a></li>
                                         <li><a href="#!">Doctorado</a></li>
-                                        <li><a href="#!">Licenciaturas e ingenierías</a></li>
+                                        <li><a href="#!">Licenciaturas/Ingenierías</a></li>
                                         <li><a href="#!">Títulos propios</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#!">Investigación</a></li> 
+                    <li class="divider"></li>
+
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header">Actividades<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <a class="collapsible-header dropdown-content-mov-header" href="#">Investigación<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">Grupos de Inv</a></li>
+                                        <li><a href="#!">Oficina de Inv</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li> 
+                    <li class="divider"></li>
+                    <!--<li><a href="#!">Investigación</a></li>--> 
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header dropdown-content-mov-header">Actividades<i class="mdi-navigation-arrow-drop-down"></i></a>
                                 <div class="collapsible-body">
                                     <ul>
                                         <li><a href="#!">Asociaciones</a></li>
@@ -115,7 +134,8 @@
                                 </div>
                             </li>
                         </ul>
-                    </li> 
+                    </li>
+                    <li class="divider"></li>
                 </ul>
                 <ul class="left hide-on-med-and-down" id="menu-principal-opciones">
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Facultad<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
@@ -142,9 +162,13 @@
                         <li><a href="#!">Licenciaturas e ingenierías</a></li>
                         <li><a href="#!">Títulos propios</a></li>
                     </ul>
-                    <li><a href="#!">Investigación</a></li>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Actividades<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Investigación<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                     <ul id='dropdown4' class='dropdown-content'>
+                        <li><a href="#!">Grupos de investigación</a></li>
+                        <li><a href="#!">Oficina de investigación</a></li>
+                    </ul>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown5">Actividades<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <ul id='dropdown5' class='dropdown-content'>
                         <li><a href="#!">Asociaciones</a></li>
                         <li><a href="#!">Conferencias</a></li>
                         <li><a href="#!">Talleres</a></li>
@@ -208,17 +232,29 @@
         <footer class="page-footer grey darken-4 row">
             <!--<div class="container">-->
             <div class="row">
-                <div class="col m2">
-                    Contacto
+                <div class="location col m1">
+                    <a href="" class="a-footer">Contacto</a>
                     <br>
-                    Aviso Legal
+                    <a href="" class="a-footer">Aviso Legal</a>
                 </div>
-                <div class="col m2">
-                    Delegación de Alumnos
-                    <br>
-                    Asociaciones
+                <div class="location col m1">
+                    <a href="" class="a-footer">Servicios UCM en línea</a>
                 </div>
-                <div class="location col m3">
+                <div class="location col m1">
+                    <a href="" class="a-footer">Laboratorios FDI</a>
+                </div>
+                <div class="location col m1">
+                    <a href="" class="a-footer">Delegación de Alumnos</a>
+                </div>
+                <div class="location col m1">
+                    <a href="" class="a-footer">Asociaciones</a>
+                </div>
+<!--                <div class="location col m5 right-align">
+                    <a class="grey-text text-lighten-3" href="https://twitter.com/informaticaucm"><span><i class="small fa fa-twitter-square"> </i></span></a>
+                    <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="small fa fa-youtube-square"> </i></span></a>
+                    
+                </div>-->
+                <div class="location-address right-align col m6">
                     C/Profesor García Santesmases, 9
                     <br>
                     28040 - Madrid
@@ -226,12 +262,12 @@
                     Tlfno: 91 394 75 01
                     <br>
                     Fax: 91 394 75 01
+
                 </div>
-                <div class="col m5 right-align">
+                 <div class="location col m1">
                     <a class="grey-text text-lighten-3" href="https://twitter.com/informaticaucm"><span><i class="small fa fa-twitter-square"> </i></span></a>
                     <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="small fa fa-youtube-square"> </i></span></a>
-                    <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="small fa fa-facebook-square"> </i></span></a>
-                    <a class="grey-text text-lighten-3" href="https://www.youtube.com/user/finformaticaucm"><span><i class="small fa fa-instagram"> </i></span></a>
+                    
                 </div>
             </div>
             <!--</div>-->
@@ -257,7 +293,7 @@
                 $(window).on("scroll", function () {
 
                     if ($(this).scrollTop() >= 84) {
-                        
+
                         $("#menu-principal-div").css("position", "fixed");
                         $("#menu-principal-div").css("top", "0");
                         $("#menu-principal-div").css("z-index", "2000");
@@ -265,7 +301,7 @@
                         $("#logo-navbar").show();
                         $("#menu-principal-div").addClass("animated slideInDown");
                         $(".side-nav").css("position", "absolute");
-                        $(".side-nav").css("height", $(window).height()+"px");
+                        $(".side-nav").css("height", $(window).height() + "px");
                     } else {
                         $("#menu-principal-div").css("position", "static");
                         $("#menu-principal-div").removeClass("animated slideInDown");

@@ -235,3 +235,43 @@ footer .row{
   text-decoration: none!important;
   -webkit-tap-highlight-color: transparent!important;
 }
+
+.card-memory {
+    background-color: #fff;
+}
+
+.card-memory-title {
+    color: #d24726!important;
+}
+
+.card-content-memory {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+  font-size: small;
+}
+
+.card-action-memory {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+  background-color: #d24726;
+}
+
+.card-action-memory a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #fff;
+  margin-right: 20px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+.card-action-memory a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #fff;
+}
+
+.nav-memory {
+  color: #fff;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: #d24726;
+}
+

@@ -210,3 +210,46 @@ footer .row{
 .dropdown-content li > a, .dropdown-content li > span{
     color: #A00D17;
 }
+
+.breadcrumbs i,
+.breadcrumbs [class^="mdi-"], .breadcrumbs [class*="mdi-"],
+.breadcrumbs i.material-icons {
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+}
+
+.breadcrumbs:before {
+  content: '\E5CC';
+  color: #A00D17;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  margin: 0 5px 0 5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.breadcrumbs:first-child:before {
+  display: none;
+  color: #A00D17;
+}
+
+.breadcrumbs:last-child {
+  color: #A00D17;
+  font-weight: bold;
+}
+
+a {
+  color: #A00D17;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a1 {
+  color: #A00D17;
+  text-decoration: none;
+  font-size: 6px;
+  -webkit-tap-highlight-color: transparent;
+}

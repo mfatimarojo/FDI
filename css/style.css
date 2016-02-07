@@ -125,8 +125,7 @@ nav#menu-principal, nav#menu-principal .nav-wrapper i, nav#menu-principal a.butt
 }
 
 .location-address {
-    //text-align: right;
-    font-size: x-small;
+    font-size: x-small!important;
     padding-top: 10px!important;
 }
 
@@ -230,10 +229,10 @@ footer .row{
 }
 
 .a-footer {
-  color: #fff!important;
-  font-weight: bold!important;
-  text-decoration: none!important;
-  -webkit-tap-highlight-color: transparent!important;
+    color: #fff!important;
+    font-weight: bold!important;
+    text-decoration: none!important;
+    -webkit-tap-highlight-color: transparent!important;
 }
 
 .card-memory {
@@ -241,37 +240,47 @@ footer .row{
 }
 
 .card-memory-title {
-    color: #d24726!important;
+    color: #a00d17!important;
 }
 
 .card-content-memory {
-  padding: 20px;
-  border-radius: 0 0 2px 2px;
-  font-size: small;
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+    font-size: small;
 }
 
 .card-action-memory {
-  border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 20px;
-  background-color: #d24726;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px;
+    background-color: #a00d17;
 }
 
 .card-action-memory a:not(.btn):not(.btn-large):not(.btn-floating) {
-  color: #fff;
-  margin-right: 20px;
-  transition: color .3s ease;
-  text-transform: uppercase;
+    color: #fff;
+    margin-right: 20px;
+    transition: color .3s ease;
+    text-transform: uppercase;
 }
 
 .card-action-memory a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-  color: #fff;
+    color: #fff;
 }
 
 .nav-memory {
-  color: #fff;
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
-  background-color: #d24726;
+    color: #fff;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    background-color: #A00D17;
 }
 
+.color-ucm{
+    color: #4d4d4d;
+    font-size: 12px;	
+}
+
+.color-ucm-titulo{
+    color: #A00D17;
+    font-size: 16px;
+    font-weight: bold;	
+}
